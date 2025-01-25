@@ -30,7 +30,7 @@
                                 {!! Str::limit($art->deskripsi) !!}
                             </div>
 
-                            <a href="{{ route('artikel.show',$art->slug) }}" class="btn btn-primary btn-sm">Selengkapnya</a>
+                            <!-- <a href="{{ route('artikel.show',$art->slug) }}" class="btn btn-primary btn-sm">Selengkapnya</a> -->
                         </div>
                         <div class="card-footer">
                             <div class="row">

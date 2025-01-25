@@ -14,6 +14,7 @@ use App\Http\Controllers\user\UbahPasswordController;
 use App\Http\Controllers\user\SiswaController;
 use App\Http\Controllers\user\HitungController;
 use App\Http\Controllers\user\JadwalController;
+use App\Http\Controllers\ChatbotController;
 
 //Controllers Namespace
 use App\Http\Controllers\HomeController;
@@ -115,3 +116,4 @@ Route::group(['namespace' => 'Admin', 'prefix' => 'admin', 'middleware' => ['aut
 });
 Route::post('/postTambah', [SiswaController::class, 'postTambah'])->name('postTambah');
 Route::post('/postEdit/{id}', [SiswaController::class, 'postEdit'])->name('postEdit');
+

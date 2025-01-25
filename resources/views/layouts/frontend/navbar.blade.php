@@ -11,7 +11,7 @@
             </button>
 
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav mr-auto">
+                <ul class="navbar-nav mr-auto ml-auto text-center">
                     <li class="nav-item {{ Request::is('/') || Request::is('home') ? 'active' : '' }}">
                         <a class="nav-link" href="/" style="font-size: 18px;">Beranda</a>
                     </li>
@@ -50,6 +50,7 @@
                             <a class="dropdown-item" href="{{ route('kelas6b') }}">Kelas VI.B</a>
                         </div>
                     </li>
+
                 </ul>
                 <form class="form-inline my-2 my-lg-0" action="{{ route('artikel.search') }}" method="GET">
                     <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" name="keyword">
@@ -73,6 +74,5 @@
                 @endauth
             </div>
         </nav>
-
     </div>
 </div>
